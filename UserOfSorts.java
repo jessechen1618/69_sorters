@@ -9,11 +9,13 @@ public class UserOfSorts {
         // arrays to be sorted
         ArrayList< String> unsorted = new ArrayList< String>(
           Arrays.asList("B", "A", "F", "J", "L", "N", "H", "C", "Z", "M", "Q", "Z"  ));
-
+        System.out.println(unsorted);
         // insertion sort                   
         oneTest( "insertion sort "
                , new InsertionSorter( unsorted)
                );
+
+        oneTest( "selection sort ", new SelectionSorter( unsorted));
     }
 
 
